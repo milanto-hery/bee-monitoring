@@ -34,5 +34,12 @@ The model was trained on a robust dataset from Roboflow, featuring thousands of 
   ` Open Bee_Counter.ipynb and follow the cells to process your video files.
   
 ## 📊 Sample Output Representation
+This section showcases the model performing real-time object detection on a video stream.
 
-## 📜 Ethical Considerations & AcknowledgmentsThis project is intended for research and conservation purposes. It promotes non-invasive monitoring to protect honey bee populations worldwide.Data Credits: Roboflow for the training dataset.Video Credits: Various YouTube Beehive Livestreams used for testing purposes.
+
+<p align="left"> <img src="./output/bee_monitoring_demo.gif" width="700px"> </p>
+
+## 📜 Ethical Considerations & Acknowledgments
+This project is intended for research and conservation purposes. It promotes non-invasive monitoring to protect honey bee populations worldwide.
+- Data Credits: Roboflow for the training dataset.
+- Video Credits: Various YouTube Beehive Livestreams used for testing purposes.
