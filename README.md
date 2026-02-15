@@ -44,7 +44,7 @@ The model was trained on a robust dataset from Roboflow, featuring thousands of 
   
 ###  Run the Notebook:
       
-      Open Bee_Counter.ipynb and follow the cells to process your video files.
+      Open bee_monitoring.ipynb and follow the cells to process your video files.
       
 ---
 
