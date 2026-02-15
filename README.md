@@ -22,6 +22,7 @@ Monitoring beehives is essential for assessing colony health and pollination pro
 The model was trained on a robust dataset from Roboflow, featuring thousands of annotated images to ensure the AI recognizes bees from various angles and lighting conditions.
 - Validation & TestingStatic Testing: Initial verification using the Test Split (unseen data) from the training set.
 - Dynamic Testing: Real-world performance validation using high-quality hive entrance footage from YouTube.
+- 
 ## 🛠 Installation & Usage
 ### Clone the Repository:
 
@@ -41,5 +42,5 @@ This section showcases the model performing real-time object detection on a vide
 
 ## 📜 Ethical Considerations & Acknowledgments
 This project is intended for research and conservation purposes. It promotes non-invasive monitoring to protect honey bee populations worldwide.
-- Data Credits: Roboflow for the training dataset.
-- Video Credits: Various YouTube Beehive Livestreams used for testing purposes.
+- **Data Credits**: Roboflow for the training dataset.
+- **Video Credits**: YouTube Beehive Livestreams used for testing purposes. [Cherylee's Bees] /https://www.https://www.youtube.com/watch?v=u5X0ymHfY9Y
