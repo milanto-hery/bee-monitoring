@@ -24,13 +24,14 @@ The model was trained on a robust dataset from Roboflow, featuring thousands of 
 - Dynamic Testing: Real-world performance validation using high-quality hive entrance footage from YouTube.
 ## 🛠 Installation & Usage
 ### Clone the Repository:
-  
-  Bashgit clone https://github.com/yourusername/bee-monitor-ai.git
+
+  ` git clone https://github.com/yourusername/bee-monitor-ai.git
   
 ### Install Dependencies:
-  Bashpip install ultralytics supervision opencv-python numpy
-###
-  Run the Notebook:Open Bee_Counter.ipynb and follow the cells to process your video files.
+  ` pip install ultralytics supervision opencv-python numpy
+  
+###  Run the Notebook:
+  ` Open Bee_Counter.ipynb and follow the cells to process your video files.
   
 ## 📊 Sample Output Representation
 
