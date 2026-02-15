@@ -52,7 +52,7 @@ The model was trained on a robust dataset from Roboflow, featuring thousands of 
 This section showcases the model performing real-time object detection on a video stream.
 
 
-<p align="left"> <img src="./output/bee_monitoring_demo.gif" width="1000px"> </p>
+<p align="left"> <img src="./output/bee_monitoring_hive.gif" width="1000px"> </p>
 
 ---
 
