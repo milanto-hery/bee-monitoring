@@ -36,7 +36,7 @@ The model was trained on a robust dataset from Roboflow, featuring thousands of 
 ## Installation & Usage
 ### Clone the Repository:
     
-      git clone https://github.com/yourusername/bee-monitor-ai.git
+      git clone https://github.com/milanto-hery/bee-monitoring.git
   
 ### Install Dependencies:
 
