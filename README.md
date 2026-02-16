@@ -48,7 +48,7 @@ The model was trained on a robust dataset from Roboflow, featuring thousands of 
       
 ---
 
-## 📊 Sample Output Representation
+## Sample Output Representation
 This section showcases the model performing real-time object detection on a video stream.
 
 
@@ -56,9 +56,9 @@ This section showcases the model performing real-time object detection on a vide
 
 ---
 
-## 📜 Ethical Considerations & Acknowledgments
+## Ethical Considerations & Acknowledgments
 This project is intended for research and conservation purposes. It promotes non-invasive monitoring to protect honey bee populations worldwide.
 - **Data Credits**: Roboflow for the training dataset.
-- **Video Credits**: YouTube Beehive Livestreams used for testing purposes. [Cherylee's Bees] /https://www.https://www.youtube.com/watch?v=u5X0ymHfY9Y
+- **Video Credits**: YouTube video from Cherylee's Bees used for testing purposes.  https://www.https://www.youtube.com/watch?v=u5X0ymHfY9Y
 
 ---
