@@ -1,6 +1,6 @@
 # Bee Monitoring AI 🐝
 
-A professional Python package for monitoring, tracking, and counting honey bees using YOLOv11 and Computer Vision.
+A professional Python package for monitoring, tracking, and counting honey bees using YOLOv8 and Computer Vision.
 
 ![Bee Monitoring Demo](output/bee_monitoring_demo.gif)
 
@@ -31,13 +31,13 @@ python train.py --roboflow_key YOUR_API_KEY --epochs 50 --model_size n
 #### Image Detection (`detect_image.py`)
 Run inference on a single image.
 ```bash
-python detect_image.py --source path/to/image.jpg --weights yolo11n.pt
+python detect_image.py --source path/to/image.jpg --weights best.pt
 ```
 
 #### Video Monitoring (`detect_video.py`)
 Run real-time tracking and counting on a video file or webcam.
 ```bash
-python detect_video.py --weights yolo11n.pt --source path/to/video.mp4 --show
+python detect_video.py --weights best.pt --source path/to/video.mp4 --show
 ```
 *Press `q` to exit the video preview.*
 
