@@ -2,6 +2,9 @@
 
 A professional Python package for monitoring, tracking, and counting honey bees using YOLOv11 and Computer Vision.
 
+![Bee Monitoring Demo](output/bee_monitoring_demo.gif)
+
+
 ## Features
 - **Real-time Tracking**: Uses `sv.ByteTrack` for reliable individual bee identification.
 - **Automated Counting**: Monitor hive entrance traffic with line-crossing detection.
