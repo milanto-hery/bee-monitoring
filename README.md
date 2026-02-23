@@ -1,64 +1,56 @@
-# 🐝 Bee Monitoring
+# Bee Monitoring AI 🐝
 
-This system identifies, tracks, and logs the activity of workers, pollen foragers, drones, and queens using deep learning. Monitoring beehives is essential for assessing colony health and pollination productivity. This project provides a non-invasive tool to track hive traffic and detect rare events (like queen movement) without disturbing the bees.
+A professional Python package for monitoring, tracking, and counting honey bees using YOLOv11 and Computer Vision.
 
----
+## Features
+- **Real-time Tracking**: Uses `sv.ByteTrack` for reliable individual bee identification.
+- **Automated Counting**: Monitor hive entrance traffic with line-crossing detection.
+- **Custom HUD**: Visual feedback with detection logs and performance metrics.
+- **Dual Mode**: 
+  - **CLI Scripts**: Optimized for performance and production use.
+  - **Jupyter Notebook**: Interactive tutorial for learning and experimentation.
 
-## Core Objectives
+## Installation
+```bash
+pip install -r requirements.txt
+```
 
-- Real-time Counting: Quantify hive traffic (In/Out) and foraging intensity.
-- Classification: Distinguish between workers, pollen-bearing bees, drones, and queens.
-- Behavioral Logging: Record exact timestamps of significant biological events.
+## Usage
 
-## Key Features
+### 1. Training (`train.py`)
+Train a new model on your own dataset or using Roboflow.
+```bash
+python train.py --roboflow_key YOUR_API_KEY --epochs 50 --model_size n
+```
 
-`Unique Tracking & Anti-Double Counting`. Utilizing ByteTrack, the system assigns a unique ID to every bee. This ensures that a bee lingering at the entrance is only counted once, providing accurate demographic data.
+### 2. Detection & Monitoring
 
-`Transparent Analytics Dashboard`. The video output features a semi-transparent bottom overlay (HUD) that displays:
+#### Image Detection (`detect_image.py`)
+Run inference on a single image.
+```bash
+python detect_image.py --source path/to/image.jpg --weights yolo11n.pt
+```
 
-- Live Stats: Current count of each bee class.Suspicious
-- Queen Events: A log of potential queen sightings.
-- System Time: Real-time device clock integration for precise logging.
-  
-`False Positive Mitigation (Queen Verification)`. To minimize errors where a large worker might be mistaken for a queen, the system employs:
+#### Video Monitoring (`detect_video.py`)
+Run real-time tracking and counting on a video file or webcam.
+```bash
+python detect_video.py --weights yolo11n.pt --source path/to/video.mp4 --show
+```
+*Press `q` to exit the video preview.*
 
-- Aspect Ratio Analysis: Checks if the body shape matches the long, slender "prototype" of a queen.
-- Persistence Filtering: A detection must be consistent across multiple frames (15+) before being logged.
-  
-## Training
+### 3. Tutorial (`demo.ipynb`)
+Explore the logic interactively by opening the `demo.ipynb` notebook.
 
-The model was trained on a robust dataset from Roboflow, featuring thousands of annotated images to ensure the AI recognizes bees from various angles and lighting conditions.
-- Validation & Testing: Initial verification using the Test Split (unseen data) from the training set.
-- Dynamic Testing: Real-world performance validation using high-quality hive entrance footage from YouTube.
+## Key Classes
+- **Bees**: Standard workers.
+- **Pollen Bees**: Foragers with pollen sacks.
+- **Drones**: Larger male bees.
+- **Queens**: The hive's mother (triggers special alerts in `detect.py`).
 
----
-
-## Installation & Usage
-### Clone the Repository:
-    
-      git clone https://github.com/milanto-hery/bee-monitoring.git
-  
-### Install Dependencies:
-
-      pip install ultralytics opencv-python numpy
-  
-###  Run the Notebook:
-      
-      Open bee_monitoring.ipynb and follow the cells to process your video files.
-      
----
-
-## Sample Output Representation
-This section showcases the model performing real-time object detection on a video stream.
-
-
-<p align="left"> <img src="./output/bee_monitoring_hive.gif" width="1000px"> </p>
-
----
-
-## Ethical Considerations & Acknowledgments
-This project is intended for research and conservation purposes. It promotes non-invasive monitoring to protect honey bee populations worldwide.
-- **Data Credits**: Roboflow for the training dataset.
-- **Video Credits**: YouTube video from Cherylee's Bees used for testing purposes.  https://www.https://www.youtube.com/watch?v=u5X0ymHfY9Y
-
----
+## Project Structure
+- `train.py`: Training script with CLI arguments.
+- `detect_image.py`: Static image detection script.
+- `detect_video.py`: Real-time tracking and counting module with `BeeMonitor` class.
+- `demo.ipynb`: Interactive tutorial.
+- `requirements.txt`: Project dependencies.
+- `.gitignore`: Clean repository configuration.

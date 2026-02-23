@@ -1,0 +1,24 @@
+# Datasets
+datasets/
+
+# YOLO training runs
+runs/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Data & Output
+*.mp4
+!sample_video.mp4
+queen_events.txt
+
+# Misc
+.DS_Store
+.env
